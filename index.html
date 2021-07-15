@@ -1,0 +1,53 @@
+<head>
+<style>
+
+body {
+  background-color: #36393e;
+}
+
+.verticalhorizontal {
+	position: absolute;
+	width: 100px; /*the image width*/
+	height: 100px; /*the image height*/
+	left: 50%;
+	top: 50%;
+	margin-left: -50px; /*half the image width*/
+	margin-top: -50px; /*half the image height*/
+	color: #ffffff
+}
+
+.fadeit {
+    -webkit-animation: fadeinout 5s linear forwards;
+    animation: fadeinout 5s linear forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+</style>
+</head>
+
+<body>
+<meta http-equiv="refresh" content="6;url=main.html" />
+
+<div class="fadeit">
+<div class="verticalhorizontal">
+    <img src="vg.gif" alt="logo"/>
+</div>
+</div>
+<!--<div class="verticalhorizontal">
+    <h1>loading</h1>
+</div>-->
+</body>
